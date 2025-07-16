@@ -1,0 +1,516 @@
+/* Основные стили и шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;0,800;1,400;1,700&family=Snell+Roundhand:wght@700&display=swap');
+
+:root {
+    --bg-color: #D9D9D4;
+    --text-color: #25221B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spectral', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.intro-header {
+    position: relative;
+    text-align: center;
+    max-width: 1620px;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-inline: 50px;
+}
+
+.year {
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: 800;
+    position: absolute;
+    top: 350px;
+    right: 260px;
+    font-size: 47px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    letter-spacing: 0.5px;
+}
+
+
+.resume-word {
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: 700;
+    font-size: 256px;
+    display: block;
+    margin-top: -80px;
+    letter-spacing: -0.4px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Выравнивание по нижнему краю */
+    padding-top: 200px;
+
+    font-weight: regular;
+    font-size: 32px;
+    letter-spacing: -2px;
+
+    line-height: 90%;
+}
+
+.name-email {
+    text-align: left;
+    flex: 1;
+}
+
+.name {
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Все буквы заглавные */
+}
+
+/* Блок должности */
+.position {
+    text-align: center;
+    flex: 1;
+    padding: 0 15px; /* Чтобы текст не прилипал к краям */
+}
+
+/* Блок контактов */
+.contacts {
+    text-align: right;
+    flex: 1;
+}
+
+.behance-link {
+    color: #25221B;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.main-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1620px;
+    padding-inline: 50px;
+}
+.me-section{
+    max-width: 1620px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.me-container{
+    position: relative;
+}
+
+.me-name{
+    font-size: 96px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+}
+
+.me-info{
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.me-img {
+    margin: 0 auto; 
+    flex: 0 0 400px;
+    position: relative;
+    width: 825px;
+    height: 825px;
+    overflow: hidden;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-gradient-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Высота градиента */
+    background: linear-gradient(
+    to bottom, 
+    transparent 0%, 
+    var(--bg-color) 100%
+  );
+  pointer-events: none;
+}
+
+.me-text {
+    flex: 1;
+    font-size: 32px;
+}
+
+.me-text p {
+    margin-bottom: -130px;
+    max-width: 100%;
+}
+
+.about-section{
+    max-width: 1620px;
+    width: 100%;
+}
+
+.about-name{
+    font-size: 96px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.data-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--text-color);
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.data-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-main {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 0px;
+    letter-spacing: -1px;
+}
+
+.data-year {
+    font-size: 25px;
+    color: rgba(37, 34, 27, 0.7);
+}
+
+.contacts-section{
+    padding-top: 100px;
+    max-width: 1620px;
+    width: 100%;
+}
+
+.contacts-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacts-name{
+    font-size: 96px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+}
+
+.contacts-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap:250px;
+}
+
+.contacts-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.contacts-info{
+    font-size: 32px;
+    margin-bottom: 0px;
+    letter-spacing: -1px;
+}
+
+.ui-section{
+    max-width: 1620px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.ui-name{
+    font-size: 96px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 50px;
+    letter-spacing: -2px;
+    padding-top: 100px;
+}
+
+.ui-work-title{
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.ui-work-subtitle-1{
+    font-size: 32px;
+}
+
+.ui-work-subtitle{
+    font-size: 32px;
+    padding-top: 50px;
+}
+
+.sub-gallery-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 20px 0;
+    max-width: 2000px;
+    margin: 0; /* Убрано auto, чтобы не центрировалось */
+    width: 100%; /* Добавлено для полной ширины */
+    overflow: visible;
+    z-index: 1;
+}
+
+.gallery-container {
+    overflow: visible;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 2000px;
+    width: 100%; /* Добавлено для полной ширины */
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: calc(50% - 25px);
+  z-index: 1;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+/* Стили модального окна */
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.wide-pic{
+    max-width: 1620px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wide-pic:hover {
+  transform: scale(1.02);
+}
+
+.wide-long-pic{
+    max-width: 1620px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.end-word{
+    margin-top: 300px;
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: 700;
+    font-size: 256px;
+    letter-spacing: -0.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 350px;
+}
+
+/* СТИЛИ ДЛЯ РАЗВЕРТКИ */
+
+.content-container {
+    width: 100%; /* Изменено с фиксированной ширины */
+    max-width: none; /* Убрано ограничение */
+    padding-inline: 50px;
+    margin: 0 auto;
+    max-height: 900px; /* Фиксированная высота превью */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.content-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, #D9D9D4 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    transition: opacity 0.5s ease 0.3s;
+    opacity: 1;
+    z-index: 2;
+}
+
+.accordion-item {
+    width: 2000px;
+    max-width: 100%;
+    overflow: visible;
+    transition: none !important;
+}
+
+/* СТИЛИ ДЛЯ РАСКРЫТОГО СОСТОЯНИЯ */
+.accordion-item.expanded .content-container {
+    max-height: 9000px; /* Убираем ограничение высоты */
+    transition: max-height 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.accordion-item.expanded .content-container::after {
+    display: none; /* Убираем градиент */
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.accordion-item.expanded .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+    
+.toggle-btn:hover {
+    color: #f0f2f5;
+}
+    
+.toggle-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.top-left {
+    top: -12px;
+    left: -12px;
+}
+
+.bottom-right {
+    bottom: -12px;
+    right: -12px;
+}
